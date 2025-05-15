@@ -1,0 +1,7 @@
+dist/
+poetry.lock
+
+
+testing
+
+
