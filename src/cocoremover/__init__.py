@@ -26,32 +26,30 @@ def main():
     parser.add_argument("-v", "--version", action="version", version=f"v{importlib.metadata.metadata('cocoremover')['Version']}", help="Show version number and exit.")
     
     
-    #parser.add_argument("-c", "--cores", metavar='', type=int, default=1, help="How many parallel processes to use.")
-    #parser.add_argument("-o", "--outdir", metavar='', type=str, default='./', help="Main output directory (will be created if not existing).")
     parser.add_argument(
         "--verbose", action='store_true', 
         help="Make stdout messages more verbose, including debug messages.")
     parser.add_argument(
-        "-i", "--input", metavar='', type=str, default='./',  
-        help="Folder containing input excel files.")
+        "-i", "--input", metavar='', type=str, default='-',  
+        help="Path to the genome assembly file.")
+    parser.add_argument(
+        "-d", "--database", metavar='', type=str, default='./cocoremover.db',  
+        help="Path to the database file.")
+    parser.add_argument(
+        "-t", "--taxid", metavar='', type=int, default=0,  
+        help="Species-level NCBI taxonomy ID for the input assembly.")
     parser.add_argument(
         "-o", "--output", metavar='', type=str, default='./',  
         help="Output folder (will be created if not existing).")
     parser.add_argument(
-        "-r", "--replicates", metavar='', type=str, default='A,B',  
-        help="Replicate IDs (comma-separated).")
-    parser.add_argument(  
-        "-p", "--plates", metavar='', type=str, default='PM1,PM2,PM3,PM4',  
-        help="Biolog(R) plate IDs (comma-separated).")
+        "-c", "--cores", metavar='', type=int, default=1, 
+        help="How many parallel processes to use during the multiprocessing steps.")
     parser.add_argument(
-        "-d", "--discarding", metavar='', type=str, default='5220-PM3-A',  
-        help="Readings to discard from the analysis, using the syntax '{strain}-{plate}-{replicate}' (comma-separated; all time points and wavelengths will be discarded).")
+        "--makedb", action='store_true', 
+        help="Compile a fresh database with the latest type-material genomes and taxonomy available (will be overwritten if existing).")
     parser.add_argument(
-        "--auc", metavar='', type=float, default=0.2,  
-        help="AUC threshold to be used during growth calling.")
-    parser.add_argument(
-        "--noynorm", action='store_true', 
-        help="Do not normalize the Y axis of PM plots.")
+        "--nocleanup", action='store_true', 
+        help="Do not remove intermediate files.")
     
 
 

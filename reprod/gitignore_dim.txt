@@ -1,0 +1,3 @@
+46G	./testing/cocoremover.db
+45G	./testing/combined_sequences.faa
+193M	./testing/nodes.dmp
