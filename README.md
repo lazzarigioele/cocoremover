@@ -4,11 +4,11 @@ Cocoremover is a simple tool for the removal of contaminant contigs from bacteri
 
 1. Build a fresh, updated reference database (eg using 36 cores):
 
-    cocoremover -c 36 --makedb
+    `cocoremover -c 36 --makedb`
     
 2. Run the decontamination of a genome (eg using 36 cores):
 
-    cocoremover -c 36 -i GCA_948938835.1.fna -t 1598 -d cocoremover.db
+    `cocoremover -c 36 -i GCA_948938835.1.fna -t 1598 -d cocoremover.db`
     
 The required parameter `-t`/`--taxid` is the species-level NCBI Taxonomy ID for the input genome assemblies. Please use `cocoremover --help` to read the full user guide. 
 
@@ -23,7 +23,7 @@ Output files will be created:
 
     pip install cocoremover
     
-Cocoremover has several dependencies that need to be satisfied beforehand. They are all easily installble through [conda](https://www.anaconda.com/docs/getting-started/miniconda/main)/[mamba](https://mamba.readthedocs.io/en/latest/). If dependencies are not found at the startup, the user will be notified.
+Cocoremover has several dependencies that need to be satisfied beforehand. They are all easily installable through [conda](https://www.anaconda.com/docs/getting-started/miniconda/main)/[mamba](https://mamba.readthedocs.io/en/latest/). If dependencies are not found at the startup, the user will be notified.
 
 * `diamond`: [GitHub](https://github.com/bbuchfink/diamond) - [Paper](https://doi.org/10.1038/s41592-021-01101-x) - [conda](https://anaconda.org/bioconda/diamond)
 * `esearch`, `esummary`, `xtract`: [Link](https://www.ncbi.nlm.nih.gov/books/NBK179288/) - [conda](https://anaconda.org/bioconda/entrez-direct)
