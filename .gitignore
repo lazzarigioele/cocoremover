@@ -2,8 +2,6 @@
 **/.ipynb_checkpoints
 **/__pycache__
 testing/cocoremover.db
-testing/combined_sequences.faa
-testing/nodes.dmp
 dist/
 poetry.lock
 
