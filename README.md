@@ -10,11 +10,11 @@ Cocoremover is a simple tool for the removal of contaminant contigs from bacteri
 
     `cocoremover -c 36 -i GCA_948938835.1.fna -t 1598 -d cocoremover.db`
     
-The required parameter `-t`/`--taxid` is the species-level NCBI Taxonomy ID for the input genome assemblies. Please use `cocoremover --help` to read the full user guide. 
+The required parameter `-t`/`--taxid` is the species-level NCBI Taxonomy ID for the input genome assembly. Please use `cocoremover --help` to read the full user guide. 
 
 Output files will be created: 
 
-* `{assembly}.counts`: shows, for each contig, the number of genes for each species. If the species with the higher number of genes is different from the one specified by `--taxid`, then the contig is assumed as contaminant. 
+* `{assembly}.counts`: shows, for each contig, the number of genes for each detected species. If the species with the highest number of genes is different from the one specified with `--taxid`, then the contig is assumed as contaminant. 
 * `{assembly}.CT.{ext}`: FASTA file containing contigs marked as contaminant.
 * `{assembly}.OK.{ext}`: original genome assembly with the contaminating contigs removed.
 
