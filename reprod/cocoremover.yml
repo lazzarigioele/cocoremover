@@ -17,6 +17,7 @@ dependencies:
   - backcall=0.2.0=pyh9f0ad1d_0
   - backports=1.0=pyhd8ed1ab_3
   - backports.functools_lru_cache=1.6.4=pyhd8ed1ab_0
+  - backports.tarfile=1.2.0=pyhd8ed1ab_1
   - beautifulsoup4=4.13.4=pyha770c72_0
   - biopython=1.85=py39h8cd3c5a_1
   - bleach=5.0.1=pyhd8ed1ab_0
@@ -25,10 +26,13 @@ dependencies:
   - bzip2=1.0.8=h7f98852_4
   - c-ares=1.18.1=h7f98852_0
   - ca-certificates=2025.8.3=hbd8a1cb_0
+  - cachecontrol=0.14.3=pyha770c72_0
+  - cachecontrol-with-filecache=0.14.3=pyhd8ed1ab_0
   - certifi=2025.8.3=pyhd8ed1ab_0
   - certipy=0.1.3=py_0
   - cffi=1.15.1=py39he91dace_3
   - charset-normalizer=2.1.1=pyhd8ed1ab_0
+  - cleo=2.1.0=pyhd8ed1ab_1
   - colorama=0.4.6=pyhd8ed1ab_0
   - colorlog=6.9.0=pyh707e725_1
   - comm=0.1.2=pyhd8ed1ab_0
@@ -36,18 +40,31 @@ dependencies:
   - conda-package-handling=2.0.2=pyh38be061_0
   - conda-package-streaming=0.7.0=pyhd8ed1ab_1
   - configurable-http-proxy=4.5.3=he2f69ee_3
+  - crashtest=0.4.1=pyhd8ed1ab_1
   - cryptography=38.0.4=py39h3ccb8fc_0
+  - dbus=1.13.6=h5008d03_3
   - debugpy=1.6.5=py39h227be39_0
   - decorator=5.1.1=pyhd8ed1ab_0
   - defusedxml=0.7.1=pyhd8ed1ab_0
   - diamond=2.1.11=h5ca1c30_2
+  - distlib=0.4.0=pyhd8ed1ab_0
+  - dulwich=0.22.8=py39he612d8f_0
   - entrez-direct=22.4=he881be0_0
   - entrypoints=0.4=pyhd8ed1ab_0
   - executing=1.2.0=pyhd8ed1ab_0
+  - expat=2.7.1=hecca717_0
+  - filelock=3.19.1=pyhd8ed1ab_0
+  - findpython=0.6.3=pyhff2d567_0
   - flit-core=3.8.0=pyhd8ed1ab_0
   - fmt=9.1.0=h924138e_0
   - greenlet=3.2.2=py39hf88036b_0
   - gzip=1.12=h166bdaf_0
+  - h11=0.14.0=pyhd8ed1ab_1
+  - h2=4.2.0=pyhd8ed1ab_0
+  - hpack=4.1.0=pyhd8ed1ab_0
+  - httpcore=1.0.7=pyh29332c3_1
+  - httpx=0.28.1=pyhd8ed1ab_0
+  - hyperframe=6.1.0=pyhd8ed1ab_0
   - icu=70.1=h27087fc_0
   - idna=3.4=pyhd8ed1ab_0
   - importlib-metadata=6.0.0=pyha770c72_0
@@ -55,7 +72,11 @@ dependencies:
   - ipykernel=6.19.4=pyh210e3f2_0
   - ipython=8.7.0=pyh41d4057_0
   - ipython_genutils=0.2.0=py_1
+  - jaraco.classes=3.4.0=pyhd8ed1ab_2
+  - jaraco.context=6.0.1=pyhd8ed1ab_0
+  - jaraco.functools=4.3.0=pyhd8ed1ab_0
   - jedi=0.18.2=pyhd8ed1ab_0
+  - jeepney=0.9.0=pyhd8ed1ab_0
   - jinja2=3.1.2=pyhd8ed1ab_1
   - json5=0.9.5=pyh9f0ad1d_0
   - jsonschema=4.17.3=pyhd8ed1ab_0
@@ -70,6 +91,7 @@ dependencies:
   - jupyterlab=3.5.2=pyhd8ed1ab_0
   - jupyterlab_pygments=0.2.2=pyhd8ed1ab_0
   - jupyterlab_server=2.17.0=pyhd8ed1ab_0
+  - keyring=25.6.0=pyha804496_0
   - keyutils=1.6.1=h166bdaf_0
   - krb5=1.20.1=h81ceb04_0
   - ld_impl_linux-64=2.39=hcc3a1bd_1
@@ -80,12 +102,14 @@ dependencies:
   - libcurl=8.1.2=h409715c_0
   - libedit=3.1.20191231=he28a2e2_2
   - libev=4.33=h516909a_1
+  - libexpat=2.7.1=hecca717_0
   - libffi=3.4.2=h7f98852_5
   - libgcc=15.1.0=h767d61c_2
   - libgcc-ng=15.1.0=h69a702a_2
   - libgettextpo=0.24.1=h5888daf_0
   - libgfortran=15.1.0=h69a702a_2
   - libgfortran5=15.1.0=hcea5267_2
+  - libglib=2.82.2=h2ff4ddf_1
   - libgomp=15.1.0=h767d61c_2
   - libiconv=1.17=h166bdaf_0
   - libidn2=2.3.8=ha4ef2c3_0
@@ -113,6 +137,8 @@ dependencies:
   - markupsafe=2.1.1=py39hb9d737c_2
   - matplotlib-inline=0.1.6=pyhd8ed1ab_0
   - mistune=2.0.4=pyhd8ed1ab_0
+  - more-itertools=10.7.0=pyhd8ed1ab_0
+  - msgpack-python=1.1.1=py39h74842e3_0
   - nbclassic=0.4.8=pyhd8ed1ab_0
   - nbclient=0.7.2=pyhd8ed1ab_0
   - nbconvert=7.2.7=pyhd8ed1ab_0
@@ -127,20 +153,25 @@ dependencies:
   - numpy=2.0.2=py39h9cb892a_1
   - oauthlib=3.2.2=pyhd8ed1ab_0
   - openssl=3.5.2=h26f9b46_0
-  - packaging=22.0=pyhd8ed1ab_0
+  - packaging=25.0=pyh29332c3_1
   - pamela=1.0.0=py_0
   - pandas=2.2.3=py39h3b40f6f_3
   - pandoc=3.7=ha770c72_0
   - pandocfilters=1.5.0=pyhd8ed1ab_0
   - parallel=20170422=pl5.22.0_0
   - parso=0.8.3=pyhd8ed1ab_0
+  - pbs-installer=2025.8.18=pyhd8ed1ab_0
+  - pcre2=10.44=hc749103_2
   - perl=5.22.0.1=0
   - pexpect=4.8.0=pyh1a96a4e_2
   - pickleshare=0.7.5=py_1003
   - pip=22.3.1=pyhd8ed1ab_0
+  - pkginfo=1.12.1.2=pyhd8ed1ab_0
   - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_0
-  - platformdirs=2.6.2=pyhd8ed1ab_0
+  - platformdirs=4.3.8=pyhe01879c_0
   - pluggy=1.0.0=pyhd8ed1ab_5
+  - poetry=2.1.4=pyha804496_0
+  - poetry-core=2.1.3=pyhd8ed1ab_0
   - prodigal=2.6.3=h7b50bb2_10
   - prometheus_client=0.15.0=pyhd8ed1ab_0
   - prompt-toolkit=3.0.36=pyha770c72_0
@@ -154,25 +185,32 @@ dependencies:
   - pygments=2.13.0=pyhd8ed1ab_0
   - pyjwt=2.6.0=pyhd8ed1ab_0
   - pyopenssl=22.1.0=pyhd8ed1ab_0
+  - pyproject_hooks=1.2.0=pyhd8ed1ab_1
   - pyrsistent=0.19.3=py39h72bdee0_0
   - pysocks=1.7.1=pyha2e5f31_6
   - python=3.9.15=hba424b6_0_cpython
+  - python-build=1.3.0=pyhff2d567_0
   - python-dateutil=2.8.2=pyhd8ed1ab_0
-  - python-fastjsonschema=2.16.2=pyhd8ed1ab_0
+  - python-fastjsonschema=2.21.2=pyhe01879c_0
+  - python-installer=0.7.0=pyhff2d567_1
   - python-json-logger=2.0.4=pyhd8ed1ab_0
   - python-tzdata=2025.2=pyhd8ed1ab_0
   - python_abi=3.9=3_cp39
   - pytz=2022.7=pyhd8ed1ab_0
   - pyyaml=6.0=py39hb9d737c_5
   - pyzmq=24.0.1=py39headdf64_1
+  - rapidfuzz=3.13.0=py39hf88036b_0
   - readline=8.1.2=h0f457ee_0
   - reproc=14.2.4=h0b41bf4_0
   - reproc-cpp=14.2.4=hcb278e6_0
   - requests=2.28.1=pyhd8ed1ab_1
+  - requests-toolbelt=1.0.0=pyhd8ed1ab_1
   - ruamel.yaml=0.17.21=py39hb9d737c_2
   - ruamel.yaml.clib=0.2.7=py39h72bdee0_1
+  - secretstorage=3.3.3=py39hf3d152e_3
   - send2trash=1.8.0=pyhd8ed1ab_0
   - setuptools=65.6.3=pyhd8ed1ab_0
+  - shellingham=1.5.4=pyhd8ed1ab_1
   - six=1.16.0=pyh6c4a22f_0
   - sniffio=1.3.0=pyhd8ed1ab_0
   - soupsieve=2.3.2.post1=pyhd8ed1ab_0
@@ -183,14 +221,17 @@ dependencies:
   - tinycss2=1.2.1=pyhd8ed1ab_0
   - tk=8.6.13=noxft_h4845f30_101
   - tomli=2.0.1=pyhd8ed1ab_0
+  - tomlkit=0.13.3=pyha770c72_0
   - toolz=0.12.0=pyhd8ed1ab_0
   - tornado=6.2=py39hb9d737c_1
   - tqdm=4.64.1=pyhd8ed1ab_0
   - traitlets=5.8.0=pyhd8ed1ab_0
+  - trove-classifiers=2025.8.6.13=pyhd8ed1ab_0
   - typing-extensions=4.13.2=h0e9735f_0
   - typing_extensions=4.13.2=pyh29332c3_0
   - tzdata=2025b=h78e105d_0
   - urllib3=1.26.13=pyhd8ed1ab_0
+  - virtualenv=20.32.0=pyhd8ed1ab_0
   - wcwidth=0.2.5=pyh9f0ad1d_2
   - webencodings=0.5.1=py_1
   - websocket-client=1.4.2=pyhd8ed1ab_0
