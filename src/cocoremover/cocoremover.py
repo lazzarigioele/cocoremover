@@ -311,6 +311,7 @@ def build_database(logger, output, cores, nocleanup):
         
     
 def main_run(logger, assembly, output, cores, database, input_taxid, nocleanup):
+        
     
     os.makedirs(output, exist_ok=True)
 
@@ -471,8 +472,13 @@ def cocoremover(args, logger):
     while args.output.endswith('/'):
         args.output = args.output[:-1]
     
-        
     
+    # adjust cores:
+    if args.cores == 0:
+        args.cores = os.cpu_count()
+        if args.cores == None: args.cores = 1
+    
+        
     
     response = check_dependencies(logger)
     if response != 0: return 1
